@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Nova+Square&family=Roboto+Mono&family=Rubik:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="toggle-div">
+        <ion-icon
+          name="menu"
+          class="nav-toggle"
+          onclick="displaysidenav()"
+        ></ion-icon>
+      </div>
+      <div class="sidenav">
+        <h1 class="primary-heading">Eduhouse</h1>
+        <p onclick="closesidenav()" class="close-x">X</p>
+        <p>Main menu</p>
+        <ul class="first-list">
+          <li>
+            <a href=""
+              ><ion-icon name="home" class="nav-icon"></ion-icon>Overview</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="bookmark-outline" class="nav-icon"></ion-icon
+              >E-book</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="heart-outline" class="nav-icon"></ion-icon>My
+              Courses</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="card-outline" class="nav-icon"></ion-icon
+              >Purchase Course</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon
+                name="document-text-outline"
+                class="nav-icon"
+              ></ion-icon
+              >Completed Courses</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon
+                name="chatbubble-ellipses-outline"
+                class="nav-icon"
+              ></ion-icon
+              >Community</a
+            >
+          </li>
+        </ul>
+        <p>Setting</p>
+        <ul>
+          <li>
+            <a href=""
+              ><ion-icon name="person-outline" class="nav-icon"></ion-icon
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="settings-outline" class="nav-icon"></ion-icon
+              >Setting</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><ion-icon name="log-out-outline" class="nav-icon"></ion-icon
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="sidecontainer">
+        <div class="search-conatiner">
+          <div>
+            <input
+              type="text"
+              placeholder="&#xF002; Search"
+              style="font-family: Arial, FontAwesome"
+            />
+
+            <div>
+              <ion-icon name="notifications-outline"></ion-icon>
+              <img src="./images/person456.jpg" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+        <div class="progres-heading">
+          <h5>Course in Progress</h5>
+          <p>View all</p>
+        </div>
+        <div class="cards appContainer">
+          <div class="carddesign">
+            <div class="inner-content">
+              <p class="date"><span>Start </span>Dec 15,2020</p>
+              <p>
+                <ion-icon name="calendar-outline" class="cards-icon"></ion-icon>
+              </p>
+            </div>
+            <p class="teritary-heading">App Design</p>
+            <h6 class="card-sub-heading">
+              Learn App design from our expert trainer
+            </h6>
+            <p class="card-description">
+              Finally a comprehensive guide to using sketch for designing...
+            </p>
+            <div class="progress"></div>
+            <div class="inner-content">
+              <p>Progress</p>
+              <p>20%</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards webContainer">
+          <div class="carddesign">
+            <div class="inner-content">
+              <p class="date"><span>Start </span>Dec 15,2020</p>
+              <p>
+                <ion-icon name="calendar-outline" class="cards-icon"></ion-icon>
+              </p>
+            </div>
+            <p class="teritary-heading">Web Design</p>
+            <h6 class="card-sub-heading">
+              Learn Web design from our expert trainer
+            </h6>
+            <p class="card-description">
+              Finally a comprehensive guide to using sketch for designing...
+            </p>
+            <div class="progress"></div>
+            <div class="inner-content">
+              <p>Progress</p>
+              <p>80%</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards Dashboard">
+          <div class="carddesign">
+            <div class="inner-content">
+              <p class="date"><span>Start </span>Dec 15,2020</p>
+              <p>
+                <ion-icon name="calendar-outline" class="cards-icon"></ion-icon>
+              </p>
+            </div>
+            <p class="teritary-heading">Dashboard</p>
+            <h6 class="card-sub-heading">
+              Learn Typography from our expert trainer
+            </h6>
+            <p class="card-description">
+              Finally a comprehensive guide to using sketch for designing...
+            </p>
+            <div class="progress"></div>
+            <div class="inner-content">
+              <p>Progress</p>
+              <p>50%</p>
+            </div>
+          </div>
+        </div>
+        <div class="cards subscribe">
+          <div class="carddesign">
+            <ion-icon
+              name="calendar-number-outline"
+              class="cards-icon"
+            ></ion-icon>
+            <p class="subscribe-heading">
+              You have 5 days left on your subsciption
+            </p>
+            <button>Upgrade to pro</button>
+          </div>
+        </div>
+        <div class="cards-large categories">
+          <div class="carddesign">
+            <h5>Popular Categories</h5>
+            <div class="courses-box">
+              <div>
+                <h6>UI/UX Design</h6>
+                <p>18 Course</p>
+              </div>
+              <div>
+                <ion-icon
+                  name="desktop-outline"
+                  class="category-icon purple-icon"
+                ></ion-icon>
+              </div>
+            </div>
+            <div class="courses-box">
+              <div>
+                <h6>Marketing</h6>
+                <p>34 Course</p>
+              </div>
+              <div>
+                <ion-icon
+                  name="desktop-outline"
+                  class="category-icon orange-icon"
+                ></ion-icon>
+              </div>
+            </div>
+            <div class="courses-box">
+              <div>
+                <h6>Development</h6>
+                <p>126 Course</p>
+              </div>
+              <div>
+                <ion-icon
+                  name="desktop-outline"
+                  class="category-icon blue-icon"
+                ></ion-icon>
+              </div>
+            </div>
+            <div class="courses-box">
+              <div>
+                <h6>Business</h6>
+                <p>213 Course</p>
+              </div>
+              <div>
+                <ion-icon
+                  name="desktop-outline"
+                  class="category-icon green-icon"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-large mentors">
+          <div class="carddesign">
+            <div>
+              <h5>Top Mentors</h5>
+              <p>View All</p>
+            </div>
+            <div class="mentors-box">
+              <div>
+                <img src="./images/person456.jpg" alt="" srcset="" />
+                <p class="mentors-name">Shine Smith</p>
+              </div>
+              <p>UI/UX Desinger</p>
+              <p>18 Course</p>
+              <p>1200 Follower</p>
+              <div class="social-media">
+                <button>Follow</button>
+                <ion-icon name="mail-outline" class="mail-icon"></ion-icon>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="mentors-box">
+              <div>
+                <img src="./images/person456.jpg" alt="" srcset="" />
+                <p class="mentors-name">Mikel</p>
+              </div>
+              <p>Marketer</p>
+              <p>24 Course</p>
+              <p>900 Follower</p>
+              <div class="social-media">
+                <button>Follow</button>
+                <ion-icon name="mail-outline" class="mail-icon"></ion-icon>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="mentors-box">
+              <div>
+                <img src="./images/person456.jpg" alt="" srcset="" />
+                <p class="mentors-name">Tohid golakar</p>
+              </div>
+              <p>Android Developer</p>
+              <p>64 Course</p>
+              <p>1590 Follower</p>
+              <div class="social-media">
+                <button>Follow</button>
+                <ion-icon name="mail-outline" class="mail-icon"></ion-icon>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="mentors-box">
+              <div>
+                <img src="./images/person456.jpg" alt="" srcset="" />
+                <p class="mentors-name">Md sakib</p>
+              </div>
+              <p>Frontend Developer</p>
+              <p>85 Course</p>
+              <p>3400 Follower</p>
+              <div class="social-media">
+                <button>Follow</button>
+                <ion-icon name="mail-outline" class="mail-icon"></ion-icon>
+                <ion-icon
+                  name="ellipsis-vertical-outline"
+                  class="more-icon"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
